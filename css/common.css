@@ -38,7 +38,8 @@ body {
 }
 
 ul,
-li {
+li,
+h1 {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -73,4 +74,12 @@ li {
   width: 360px;
   height: 300px;
   display: block;
+}
+
+#name-input {
+  width: 360px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
 }
