@@ -61,6 +61,8 @@ h1 {
   margin-bottom: 0;
 }
 
+/*================================== TASK-2 ==================================*/
+
 .gallery {
   max-width: 1128px;
   margin: 0 auto;
@@ -76,6 +78,8 @@ h1 {
   display: block;
 }
 
+/*================================== TASK-3 ==================================*/
+
 #name-input {
   width: 360px;
   padding: 8px 16px;
@@ -83,3 +87,66 @@ h1 {
   border-radius: 4px;
   border: 1px solid #808080;
 }
+
+/*================================== TASK-4 ==================================*/
+
+.login-form {
+  width: 408px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border-radius: 8px;
+  background: #fff;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form label:first-child {
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.login-form input:hover {
+  border: 1px solid #000;
+}
+
+.login-form input:active {
+  color: #2e2f42;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.login-form button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.login-form button:hover {
+  background: #6c8cff;
+}
+
+/*================================== TASK-5 ==================================*/
