@@ -150,3 +150,36 @@ h1 {
 }
 
 /*================================== TASK-5 ==================================*/
+
+.widget {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 100px 88px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.widget p {
+  margin: 0 0 16px 0;
+  padding: 0;
+  color: #2e2f42;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.color {
+}
+.change-color {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: Montserrat;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  cursor: pointer;
+}
