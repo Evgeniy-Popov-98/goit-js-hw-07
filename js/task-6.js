@@ -6,20 +6,18 @@ function getRandomHexColor() {
 
 const buttonCreate = document.querySelector('button[data-create]');
 const buttonDestroy = document.querySelector('button[data-destroy]');
-const inputNumber = document.querySelector('input');
 const addInDiv = document.querySelector('#boxes');
+const inputNumber = document.querySelector('input');
 
-// inputNumber.addEventListener('blur', newdiv);
-buttonCreate.addEventListener('click', checkAmount);
+buttonCreate.addEventListener('click', addBoxes);
 buttonDestroy.addEventListener('click', destroyBoxes);
 
-function checkAmount() {
-  const amount = inputNumber.value;
-  console.log(amount);
+function addBoxes() {
+  destroyBoxes();
+  createBoxes(inputNumber.value);
 }
 
-function addDiv() {
-  const amount = inputNumber.value;
+function createBoxes(amount) {
   console.log(amount);
   if (amount >= 1 && amount <= 100) {
     let width = 30;
@@ -28,7 +26,6 @@ function addDiv() {
       const newDiv = document.createElement('div');
       addInDiv.append(newDiv);
 
-      newDiv.classList.add('div-box');
       newDiv.style.backgroundColor = getRandomHexColor();
       newDiv.style.width = width + 'px';
       newDiv.style.height = height + 'px';
@@ -43,11 +40,8 @@ function addDiv() {
 }
 
 function destroyBoxes() {
-  const removeDiv = addInDiv.querySelector('div');
-  //   const removeDiv = addInDiv.children;
-  console.log(removeDiv);
-  for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    removeDiv.remove();
+  const removeDiv = document.querySelectorAll('#boxes div');
+  for (const div of removeDiv) {
+    div.remove();
   }
 }
