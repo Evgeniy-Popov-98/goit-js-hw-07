@@ -9,6 +9,9 @@ const buttonDestroy = document.querySelector('button[data-destroy]');
 const addInDiv = document.querySelector('#boxes');
 const inputNumber = document.querySelector('input');
 
+buttonCreate.style.backgroundColor = '#4E75FF';
+buttonDestroy.style.backgroundColor = '#FF4E4E';
+
 buttonCreate.addEventListener('click', addBoxes);
 buttonDestroy.addEventListener('click', destroyBoxes);
 
