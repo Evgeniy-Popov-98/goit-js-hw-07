@@ -7,5 +7,7 @@ function onInput() {
   const name = userName.value.trim();
   if (name) {
     newSpan.innerHTML = `${name}`;
+  } else {
+    newSpan.innerHTML = 'Anonymous';
   }
 }

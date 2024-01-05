@@ -6,7 +6,7 @@ function getRandomHexColor() {
 
 const buttonCreate = document.querySelector('button[data-create]');
 const buttonDestroy = document.querySelector('button[data-destroy]');
-const addInDiv = document.querySelector('#boxes');
+const boxDiv = document.querySelector('#boxes');
 const inputNumber = document.querySelector('input');
 
 buttonCreate.style.backgroundColor = '#4E75FF';
@@ -21,13 +21,12 @@ function addBoxes() {
 }
 
 function createBoxes(amount) {
-  console.log(amount);
   if (amount >= 1 && amount <= 100) {
     let width = 30;
     let height = 30;
     for (let index = 0; index < amount; index++) {
       const newDiv = document.createElement('div');
-      addInDiv.append(newDiv);
+      boxDiv.append(newDiv);
 
       newDiv.style.backgroundColor = getRandomHexColor();
       newDiv.style.width = width + 'px';
