@@ -27,11 +27,11 @@ const images = [
 
 const elemUl = document.querySelector('.gallery');
 
-const result = images.map(images => {
+const result = images.map(image => {
   const elemLi = document.createElement('li');
   const elemImg = document.createElement('img');
-  elemImg.setAttribute('src', images.url);
-  elemImg.setAttribute('alt', images.alt);
+  elemImg.setAttribute('src', image.url);
+  elemImg.setAttribute('alt', image.alt);
   elemLi.append(elemImg);
   return elemLi;
 });

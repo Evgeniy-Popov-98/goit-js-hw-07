@@ -31,19 +31,13 @@ function createBoxes(amount) {
       newDiv.style.backgroundColor = getRandomHexColor();
       newDiv.style.width = width + 'px';
       newDiv.style.height = height + 'px';
-      newDiv.style.margin = '10px';
 
       width += 10;
       height += 10;
     }
-  } else {
-    alert('Enter value from 1 to 100');
   }
 }
 
 function destroyBoxes() {
-  const removeDiv = document.querySelectorAll('#boxes div');
-  for (const div of removeDiv) {
-    div.remove();
-  }
+  boxDiv.innerHTML = '';
 }

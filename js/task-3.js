@@ -6,8 +6,8 @@ userName.addEventListener('input', onInput);
 function onInput() {
   const name = userName.value.trim();
   if (name) {
-    newSpan.innerHTML = `${name}`;
+    newSpan.textContent = `${name}`;
   } else {
-    newSpan.innerHTML = 'Anonymous';
+    newSpan.textContent = 'Anonymous';
   }
 }
