@@ -22,18 +22,18 @@ function addBoxes() {
 
 function createBoxes(amount) {
   if (amount >= 1 && amount <= 100) {
-    let width = 30;
-    let height = 30;
+    let boxWidth = 30;
+    let boxHeight = 30;
     for (let index = 0; index < amount; index++) {
       const newDiv = document.createElement('div');
       boxDiv.append(newDiv);
 
       newDiv.style.backgroundColor = getRandomHexColor();
-      newDiv.style.width = width + 'px';
-      newDiv.style.height = height + 'px';
+      newDiv.style.width = boxWidth + 'px';
+      newDiv.style.height = boxHeight + 'px';
 
-      width += 10;
-      height += 10;
+      boxWidth += 10;
+      boxHeight += 10;
     }
   }
 }
