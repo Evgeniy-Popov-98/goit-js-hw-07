@@ -27,7 +27,7 @@ const images = [
 
 const elemUl = document.querySelector('.gallery');
 
-const result = images.forEach(image => {
+const result = images.map(image => {
   const elemLi = document.createElement('li');
   const elemImg = document.createElement('img');
   elemImg.setAttribute('src', image.url);
